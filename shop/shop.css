@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    font-family: InstallFont;
+    font-weight: bolder;
+  }
+
+@font-face {
+    font-family: InstallFont;
+    src: url(Morn-Thin.otf);
+}
+
+#header { background-color: white;
+    font-family: InstallFont; 
+    text-align: center;
+    color: #2a7c6f;
+    font-size: larger;
+    
+}
+
+#icon {
+    background-image: url(cake.jpg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #2a7c6f;
+}
+body {font-family: InstallFont;
+    background: white;
+}
+
+
+
+
+
+nav ul { list-style-type: none;
+    font-family: InstallFont;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 5px; 
+    color: #2a7c6f;
+}
+nav li { display: inline; }
+
+nav a { text-decoration: none;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: #2a7c6f;
+}
+
+nav a:hover {
+    border-bottom: #2A7C6F solid 2px;
+  } 
+
+
+#box {
+    background-color: #2a7c6f;
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+h2 {
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: x-large;
+    letter-spacing: 2px;
+    
+}
+
+#large {
+    text-align: center;
+    padding-top: 1px;
+    color: white;
+    font-size: 170%;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*#order {
+    background-color: white;
+    color: #2a7c6f;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin-left: 660px;
+    text-decoration: none;
+    display: inline-block;
+   */
+ 
+
+
+#button1 {
+    
+    color: #2a7c6f;
+    background-color: white;
+    font-family: InstallFont;
+    border: #2a7c6f;
+    font-weight: bolder;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+   }
+
+
+
+@media screen and (max-width: 900px) {
+   #box {
+    height: 450px;
+    position: relative;
+    top: 30px;
+   }
+
+}
+
+
+
+
+button:hover {
+    background-color: #2a7c6f;
+    color: white;
+    border: 2px solid #ffffff;      
+  }
+
+
+
+#gallery { display: flex; 
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item5 {
+    /* padding: auto;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 1em;
+    padding: 1em;
+}
+
+/* #img1 {
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 0px;
+} */
+
+figcaption {
+    font-family: InstallFont;
+    color: #2a7c6f;
+    font-weight: bolder;
+    font-size: medium;
+    text-align: center;
+}
+
+/*footer { font-style: italic; 
+    font-size: .80em; 
+    text-align: center;
+    color: #2a7c6f;
+    padding: 0.5em; 
+} */
+
+footer {
+    font-style: italic;
+    font-size: .80em; 
+    padding: auto;
+    text-align: center;
+    color: #2a7c6f;
+    font-weight: bold;
+  }
+
+/*p {
+    text-align: center;
+    color: #2a7c6f;
+    padding-top: 50px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}*/
+
+@media only screen and (max-width: 480px) {
+  /* for mobile */
+  nav {
+    display: none;
+  }
+
+
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+    
+   
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:#2A7C6F;
+    padding: auto;
+    background-color: #fbfbfb;
+    font-family: inherit;
+    margin: auto;
+  }
+  
+  .dropdown img {
+    margin: auto;
+    padding: auto;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    background-color: #2a7c6f;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: InstallFont;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fbfbfb;
+    color: #2A7C6F;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  /* for desktop */
+  .dropdown {
+    display: none;
+  }
+
+
+  nav ul { 
+    list-style-type: none;
+    font-family: InstallFont;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: auto;
+    margin: auto; 
+    color: #2a7c6f;
+    
+  }
+  nav li { 
+    display: inline; 
+  }
+  
+  nav a { 
+   text-decoration: none;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: #2a7c6f;
+  }
+  
+  nav a:hover {
+    border-bottom: #2A7C6F solid 2px;
+  }
+}
