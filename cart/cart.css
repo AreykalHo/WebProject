@@ -44,74 +44,79 @@
         justify-content: space-around;
     }
 
-} 
+}
 
 @media screen and (max-width: 900px) {
     .body-cart-header {
         display: none;
-        
+
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
     h4 {
         display: none;
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
     #price {
         display: none;
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
-    #div-quantity {
+
+    #div-quantity-one,
+    #div-quantity-two {
         display: none;
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
     #button1 {
         margin-left: 60%;
-    
+
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
     #amount1::after {
         content: '1';
-    
+
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
     #amount2::after {
         content: '4';
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
+
+    #price-one,
+    #price-two,
     #price-place {
         margin-left: 20px;
         font-size: large;
     }
 
-} 
+}
 
 @media screen and (max-width:900px) {
     h5 {
         display: none;
     }
 
-} 
+}
 
 img {
     width: 100px;
@@ -125,105 +130,109 @@ img {
         height: 75px;
     }
 
-} 
+}
 
 @media only screen and (max-width: 480px) {
+
     /* for mobile */
     nav {
-      display: none;
+        display: none;
     }
-    
+
     .dropdown {
-      float: right;
-      overflow: hidden;
+        float: right;
+        overflow: hidden;
     }
-    
+
     .dropdown .dropbtn {
-      font-size: 16px;  
-      border: none;
-      outline: none;
-      color:#2A7C6F;
-      padding: auto;
-      background-color: #fbfbfb;
-      font-family: inherit;
-      margin: auto;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #2A7C6F;
+        padding: auto;
+        background-color: #fbfbfb;
+        font-family: inherit;
+        margin: auto;
     }
-    
+
     .dropdown img {
-      margin: auto;
-      padding: auto;
-      height: auto;
-      width: 30px;
-      background-color: inherit;
+        margin: auto;
+        padding: auto;
+        height: auto;
+        width: 30px;
+        background-color: inherit;
     }
-  
-    .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: white;
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: white;
     }
-    
+
     .dropdown-content {
-      display: none;
-      position: absolute;
-      font-weight: bolder;
-      left: 58%;
-      background-color: #2a7c6f;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      font-family: InstallFont;
-      z-index: 1;
+        display: none;
+        position: absolute;
+        font-weight: bolder;
+        left: 58%;
+        background-color: #2a7c6f;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        font-family: InstallFont;
+        z-index: 1;
     }
-    
+
     .dropdown-content a {
-      float: none;
-      color: white;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: center;
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
     }
-    
+
     .dropdown-content a:hover {
-      background-color: #fbfbfb;
-      color: #2A7C6F;
+        background-color: #fbfbfb;
+        color: #2A7C6F;
     }
-    
+
     .dropdown:hover .dropdown-content {
-      display: block;
+        display: block;
     }
-  }
-  
-  
-  @media screen and (min-width: 480px) {
+}
+
+
+@media screen and (min-width: 480px) {
+
     /* for desktop */
     .dropdown {
-      display: none;
+        display: none;
     }
-  
-  
-    nav ul { 
-      list-style-type: none;
-      font-family: InstallFont;
-      text-align: center;
-      font-size: 14px;
-      font-weight: bolder;
-      padding: auto;
-      margin: auto; 
-      color: #2a7c6f;
+
+
+    nav ul {
+        list-style-type: none;
+        font-family: InstallFont;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bolder;
+        padding: auto;
+        margin: auto;
+        color: #2a7c6f;
     }
-    nav li { 
-      display: inline; 
+
+    nav li {
+        display: inline;
     }
-    
-    nav a { 
-     text-decoration: none;
-     padding-left: 10px;
-     padding-right: 10px;
-     color: #2a7c6f;
+
+    nav a {
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #2a7c6f;
     }
-    
+
     nav a:hover {
-      border-bottom: #2A7C6F solid 2px;
+        border-bottom: #2A7C6F solid 2px;
     }
-  }
+}
 
 
 
@@ -301,10 +310,10 @@ label {
 @media screen and (max-width: 1000px) {
     label {
         font-size: larger;
-        
+
     }
 
-} 
+}
 
 
 .checkout-cart {
@@ -322,7 +331,7 @@ label {
         width: 80%;
     }
 
-} 
+}
 
 #btn-checkout {
     color: white;
@@ -386,7 +395,7 @@ table {
     text-align: center;
     color: #2a7c6f;
     font-size: larger;
-    
+
 }
 
 main {
@@ -416,13 +425,13 @@ nav a {
 
 nav a:hover {
     border-bottom: #2A7C6F solid 2px;
-  }
+}
 
 footer {
     font-style: italic;
-    font-size: .80em; 
+    font-size: .80em;
     padding: auto;
     text-align: center;
     color: #2a7c6f;
     font-weight: bold;
-  }
+}
