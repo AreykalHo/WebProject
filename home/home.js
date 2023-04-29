@@ -1,3 +1,27 @@
+// check user authentication
+let login = document.getElementById("login");
+// let auth = localStorage.getItem("loginStatus");
+// console.log(localStorage.getItem("loginStatus"));
+
+let auth = document.cookie
+  .split("; ")
+  .find((row) => row.startsWith("loginStatus="))
+  .split("=")[1];
+console.log(auth);
+
+if (auth == "checked") {
+  console.log(auth);
+
+  login.textContent = "Logout";
+}
+
+login.onclick = function () {
+  if (login.textContent == "Logout") {
+    document.cookie =
+      "loginStatus=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+  }
+};
+
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 
 // Apply to all slideshows that you define with the markup wrote
