@@ -274,6 +274,9 @@ footer {
   cursor: pointer;
 }
 
+.carousel {
+  position: relative;
+}
 
 .carousel img {
   height: 300px;
@@ -284,6 +287,34 @@ footer {
   cursor: pointer;
   margin: 0;
   padding: 0;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel:hover img {
+  opacity: 0.1;
+}
+
+.carousel:hover .middle {
+  opacity: 1;
+}
+
+.description {
+  color: #2A7C6F;
+  text-align: center;
 }
 
 .carousel figcaption {
@@ -295,6 +326,7 @@ footer {
   left: 10px;
   top: 200px;
   background-color: #2a7c6f;
+  z-index: 1;
 }
 
 .slick-prev:hover {
@@ -307,9 +339,11 @@ footer {
   top: 200px;
   right: 10px;
   background-color: #2A7C6F;
+  z-index: 1;
 
 }
 
 .slick-next:hover {
   background-color: #2a7c6f;
+  cursor: pointer;
 }
