@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshly bake</title>
+
+    <link rel="stylesheet" href="delivery.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="bg-white">
+    <div>
+      <div id="header">
+        <header>
+          <h1>Freshly Baked</h1>
+        </header>
+        <hr
+          style="
+            width: 100%;
+            height: 2.5px;
+            background-color: #2a7c6f;
+            margin-top: 20px;
+          "
+        />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../home/home.html">Home</a></li>
+          <li><a href="../shop/shop.html">Shop</a></li>
+          <li><a href="../cart/cart.html">Cart</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="../team/team.html">Meet The Team</a></li>
+        </ul>
+      </nav>
+      <hr
+        style="
+          width: 200px;
+          margin-bottom: 30px;
+          margin-top: 40px;
+          height: 2.5px;
+          background-color: #2a7c6f;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      />
+    </div>
+
+    <div class="flex h-screen">
+      <div class="w-4/12 bg-white p-4 rounded-lg shadow-md my-auto">
+        <h1 class="text-6xl mb-12 text-center">Delivery Option</h1>
+        <div class="border-2 border-slate-500 rounded-md p-8">
+          <div class="flex justify-between mb-4 p-4">
+            <button
+              id="take-it-button"
+              class="bg-white text-black border-2 border-slate-500 py-4 px-10 rounded-md text-lg"
+            >
+              I'll Take it
+            </button>
+            <button
+              id="take-for-me-button"
+              class="custom-button-color text-white py-4 px-8 rounded-md text-lg"
+            >
+              Take For Me
+            </button>
+          </div>
+          <div class="mb-4">
+            <h3 id="delivery-message" class="text-2xl text-center p-4 px-8">
+              Your Yummy Dessert Will Be Ready in 30 minutes
+            </h3>
+          </div>
+          <div class="mb-4">
+            <img class="rounded-md" src="../images/package.png" alt="" />
+          </div>
+          <div class="m-2 mt-8">
+            <h5 id="weather-alert" class="text-sm text-center text-red-600">
+              It is raining, sorry your package might be late around 10mn
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-8/12 bg-white p-4 rounded-lg shadow-md ml-4 flex flex-col h-full items-center justify-center"
+      >
+        <div class="mb-4 w-3/5">
+          <img src="../images/deliveryman.webp" alt="" class="w-full" />
+        </div>
+        <div class="self-end">
+          <button
+            id="btn-pay"
+            class="bg-black text-white text-xl mr-24 mt-12 py-6 px-20 rounded-md hover:bg-white hover:text-black hover:border-2 border-slate-500 transition duration-300 ease-in-out"
+          >
+            PAY
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="delivery.js"></script>
+  </body>
+</html>

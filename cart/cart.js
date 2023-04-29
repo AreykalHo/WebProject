@@ -96,3 +96,8 @@ removeButtonTwo.addEventListener("click", function () {
   totalElement.textContent = "$" + total;
   subtotalElement.textContent = "$" + subtotal;
 });
+
+let btnCheckout = document.querySelector("#btn-checkout");
+btnCheckout.onclick = function () {
+  window.location.href = "../delivery/delivery.html";
+};
