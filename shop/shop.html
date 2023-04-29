@@ -37,7 +37,7 @@
           <ul>
             <li><a href="../home/home.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="../cart/cart.html">Cart</a></li>
+            <li><a href="../cart/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
             <li><a href="../contact/contact.html">Contact</a></li>
             <li><a href="../team/team.html">Meet The Team</a></li>
            </ul>
@@ -54,39 +54,39 @@
 
     <div id="gallery">
         
-        <div class="item5">
+        <div style="cursor: pointer" class="item5" onclick="addToCart()">
         <img src="../images/cookies.jpg" width="300" height="300" alt="Cookies">
         <figcaption>Chocolate Chips Cookie <br> <br>$4.00</figcaption>
         </div>
-        <div class="item5">
+        <div style="cursor: pointer" class="item5" onclick="addToCart()">
         <img src="../images/cupcake.jpg" width="300" height="300" alt="Cookies">
         <figcaption>Cupcake <br><br>$3.00</figcaption>
         </div>
-        <div class="item5">
+        <div style="cursor: pointer" class="item5" onclick="addToCart()">
         <img src="../images/brownie.jpg" width="300" height="300" alt="Cookies">
         <figcaption>Brownie<br><br>$5.00</figcaption>
         </div>
-        <div class="item5">
+        <div style="cursor: pointer" class="item5" onclick="addToCart()">
         <img src="../images/fudge.jpg" width="300" height="300" alt="Cookies">
-        <figcaption>Fudge<br><br>$32.00</figcaption>
+        <figcaption>Fudge<br><br>$3.50</figcaption>
         </div>
 
 
         <div class="item5">
-            <img src="../images/ApplePie.jpg" width="300" height="300" alt="Cookies">
+            <img  onclick="addToCart()" style="cursor: pointer" src="../images/ApplePie.jpg" width="300" height="300" alt="Cookies">
             <figcaption>Apple Pie<br><br>$5.00</figcaption>
             </div>
-            <div class="item5">
+            <div style="cursor: pointer" class="item5" onclick="addToCart()">
             <img src="../images/cheese.jpg" width="300" height="300" alt="Cookies">
             <figcaption>Cheesecake<br><br>$6.00</figcaption>
             </div>
-            <div class="item5">
+            <div style="cursor: pointer" class="item5" onclick="addToCart()">
             <img src="../images/smore.jpg" width="300" height="300" alt="Cookies">
-            <figcaption>S'more<br><br>$6.00</figcaption>
+            <figcaption>S'more<br><br>$2.50</figcaption>
             </div>
-            <div class="item5">
-            <img src="../images/cake.jpg" width="300" height="300" alt="Cookies">
-            <figcaption>Carrot Cake<br><br>$5.00</figcaption>
+            <div style="cursor: pointer" class="item5" onclick="addToCart()">
+            <img  src="../images/cake.jpg" width="300" height="300" alt="Cookies">
+            <figcaption>Carrot Cake<br><br>$15.00</figcaption>
             </div>
         </figure>
     </div>
@@ -94,6 +94,7 @@
    
 
 </main>
+<script src="shop.js"></script>
 </body>
 <hr style="width:100%" color="#2a7c6f" size="2px">
 <footer>
