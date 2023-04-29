@@ -25,6 +25,10 @@ function bindCurrentWeatherData(response) {
     // console.log(isRaining + " from below");
     weatherAlert.textContent = "It is raining, please wait for a while";
     $("#weather-alert").show();
+  } else {
+    weatherAlert.textContent =
+      "The weather so goods today. We will deliver your order asap";
+    $("#weather-alert").show();
   }
 }
 
