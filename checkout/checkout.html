@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="../images/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="../images/favicon-16x16.png"
+/>
+  <title>Credit Card Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./checkout.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="total-logo">
+		<div class="total">
+			<span style="font-family: InstallFont">Total:</span>
+			<span class="total-n" style="font-family: InstallFont">14,50 $</span>
+		</div>
+		<div class="logo" style="font-family: InstallFont; font-size: 26px;">
+			Freshly Baked
+		</div>
+	</div>
+	<!--End TOTAL-LOGO-->
+	<div class="step">
+		<div class="retry" style="font-family: InstallFont">payment</div>
+		<div class="line"></div>
+		<div class="payment"  style="font-family: InstallFont">Payment</div>
+	</div>
+	<!--End STEP-->
+	<div class="cont-forms">
+		<!-- <form class="form" autocomplete="off" novalidate> -->
+			<fieldset class="card-number">
+				<label for="card-num" style="font-family: InstallFont">Credit card number</label>
+				<div class="flex-wrapper">
+					<input class="cc-number" type="num" maxlength="4" />
+					<input class="cc-number" type="num" maxlength="4" />
+					<input class="cc-number" type="num" maxlength="4" />
+					<input class="cc-number" type="num" maxlength="4" />
+				</div>
+			</fieldset>
+			<fieldset class="card-holder">
+				<label for="card-num" style="font-family: InstallFont">Credit card holder</label>
+				<input type="text" />
+			</fieldset>
+			<fieldset class="card-expiration">
+				<div class="expiry-ccv">
+					<div class="cont expiration-date">
+						<label for="card-num" style="font-family: InstallFont">Expiration Date</label>
+						<input type="numb" maxlength="2" />
+						<input class="last" type="num" maxlength="4" />
+					</div>
+					<div class="cont ccv">
+						<label for="card-ccv" style="font-family: InstallFont">ccv</label>
+						<input type="num" maxlength="3" />
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="conf-button">
+				<div class="flex-wrapper">
+					<button id="card" class="purchase"><span style="font-family: InstallFont">Confirm purchase</span></button>
+					<div class="or-element"><span>- or -<span></div>
+					<button id="cash" class="applepay"><span>By Cash</span></button>
+					</div>
+			</fieldset>
+		<!-- </form> -->
+		</div><!--End CONT-FORMS-->
+		<div class="button-cart">		
+			<img class="icon-cart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/icona-shop.svg">
+			<div class="product-in-cart"><span>2</span></div>
+		</div>
+	</div><!--End CONTAINER-->
+	<div class="cont-product">
+		<div class="product first">
+			<img src="../images/fudge.jpg" />
+			<div class="cont-options">
+			<div class="quantity">
+				<button class="plus" style="font-family: InstallFont; cursor: pointer;">+</button>
+				<span class="num" style="font-family: InstallFont">2</span>
+				<button class="minus" style="font-family: InstallFont; cursor: pointer;">-</button>
+			</div>
+			<button class="remove" style="font-family: InstallFont">remove</button>
+		</div>
+		</div>
+		<div class="product second">
+			<img src="../images/smore.jpg"></img>
+		<div class="cont-options">
+			<div class="quantity">
+				<button class="plus" style="font-family: InstallFont; cursor: pointer;">+</button>
+				<span class="num" style="font-family: InstallFont">3</span>
+				<button class="minus" style="font-family: InstallFont; cursor: pointer;">-</button>
+			</div>
+			<button class="remove" style="font-family: InstallFont; cursor: pointer;">remove</button>
+		</div>
+		</div>
+		<!-- <div class="product third">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlff1IE15i3j3OZ7E_vzY9-XGJ38T-61L7Hw&usqp=CAU"></img>
+		<div class="cont-options">
+			<div class="quantity">
+				<button class="plus">+</button>
+				<span class="num">1</span>
+				<button class="minus">-</button>
+			</div>
+			<button class="remove">remove</button>
+		</div> -->
+		</div>
+	</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script  src="./checkout.js"></script>
+
+</body>
+</html>

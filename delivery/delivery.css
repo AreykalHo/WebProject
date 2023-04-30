@@ -1,0 +1,50 @@
+.custom-button-color {
+    background-color: #2a7c6f;
+}
+
+.custom-button-color:hover {
+    background-color: #236657;
+}
+
+@font-face {
+    font-family: InstallFont;
+    src: url(Morn-Thin.otf);
+    /*need to install this font*/
+}
+
+#header {
+    background-color: white;
+    font-family: InstallFont;
+    text-align: center;
+    color: #2a7c6f;
+    font-size: 38px;
+}
+
+main {
+    font-family: InstallFont;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: InstallFont;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 5px;
+    color: #2a7c6f;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #2a7c6f;
+}
+
+nav a:hover {
+    border-bottom: #2a7c6f solid 2px;
+}
