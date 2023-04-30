@@ -1,5 +1,6 @@
 let subtotal = 6.0;
 let total = 6.0;
+let cartCount = document.querySelector("#cart-count");
 
 let subtotalElement = document.querySelector("#subtotal");
 let totalElement = document.querySelector("#total");
@@ -84,6 +85,8 @@ removeButtonOne.addEventListener("click", function () {
   total = subtotal;
   totalElement.textContent = "$" + total;
   subtotalElement.textContent = "$" + subtotal;
+
+  cartCount.textContent = cartCount.textContent - 1;
 });
 
 let productTwo = document.querySelector("#product-two");
@@ -95,6 +98,7 @@ removeButtonTwo.addEventListener("click", function () {
   total = subtotal;
   totalElement.textContent = "$" + total;
   subtotalElement.textContent = "$" + subtotal;
+  cartCount.textContent = cartCount.textContent - 1;
 });
 
 let btnCheckout = document.querySelector("#btn-checkout");
