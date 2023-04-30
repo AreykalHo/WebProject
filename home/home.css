@@ -302,6 +302,7 @@ footer {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
 .carousel:hover img {
@@ -315,6 +316,9 @@ footer {
 .description {
   color: #2A7C6F;
   text-align: center;
+  margin-right: 90px;
+  margin-bottom: 60px;
+
 }
 
 .carousel figcaption {
