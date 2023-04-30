@@ -33,3 +33,14 @@ $(window).on("click", function () {
   $(".button-cart").removeClass("btn-hiding");
   $(".cont-options").removeClass("slideup");
 });
+
+let cash = document.getElementById("cash");
+let card = document.getElementById("card");
+
+cash.addEventListener("click", function () {
+  window.location.href = "../ordercom/ordercom.html";
+});
+
+card.addEventListener("click", function () {
+  window.location.href = "../ordercom/ordercom.html";
+});
