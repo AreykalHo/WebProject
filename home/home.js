@@ -56,6 +56,10 @@ window.onload = function () {
     });
 };
 
+let nextBtn = document.getElementsByClassName("slick-next");
+nextBtn[0].style.borderRadius = "15px";
+console.log(nextBtn[0]);
+
 let auth = document.cookie
   .split("; ")
   .find((row) => row.startsWith("loginStatus="))

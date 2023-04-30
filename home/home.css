@@ -347,3 +347,8 @@ footer {
   background-color: #2a7c6f;
   cursor: pointer;
 }
+
+.slide-track .slick-prev,
+.slick-next {
+  border-radius: 50%;
+}
